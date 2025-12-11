@@ -1,7 +1,7 @@
 import React, { useState } from "react";
 
 import "./helpcenter.css"
-
+import title from "../assets/logo.png"
 
 const HelpCenter = () => {
   const [activeTab, setActiveTab] = useState("terms");
@@ -11,7 +11,7 @@ const HelpCenter = () => {
 
       <div style={styles.tabRow}>
 
-        <img className="helplogo" alt="" />
+        <img className="helplogo" src={title} alt="" />
 
         <h1 className="helptitle">Policy</h1>
 
